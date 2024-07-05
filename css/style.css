@@ -30,11 +30,11 @@ header i{
 /* side Nav */
 .sideNav{
     background-color: #212529;
-    height: 100vh;
     padding-top: 60px;
+    left: 0;
 }
 .sideNav .options{
-    right: -140px;
+    right: -130px;
     top: 50%;
 }
 .navList a{
@@ -49,4 +49,11 @@ header i{
     padding-top: 30px;
     padding-right: 50px;
 }
-
+/* section two */
+#sliderDown h3 {
+    padding: 10px;
+    margin: 0;
+    background-color: rgba(214, 46, 51, 0.6);
+    cursor: pointer;
+    color: white;
+}
