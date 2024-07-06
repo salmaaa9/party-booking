@@ -21,15 +21,17 @@
             <p>let's have some fun</p>
         </div>
         <div class="sideNav text-white position-fixed top-0 bottom-0">
-            <i class="close fas fa-x position-absolute end-0 pe-4 mb-5"></i>
+            <div class="menu d-none">
+                <i class="close fas fa-x position-absolute end-0 pe-4 mb-5"></i>
             <ul class="navList d-flex flex-column align-items-center ps-3 pe-5 mt-4">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#Duration">Duration</a></li>
                 <li><a href="#Details">Details</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
+            </div>
             <div class="options position-absolute p-2 d-flex align-items-center">
-                <i id="menu" class="fas fa-bars m-2"></i>
+                <i id="menuButton" class="fas fa-bars m-2"></i>
                 <h3>open</h3>
             </div>
         </div>
@@ -37,8 +39,54 @@
     </header>
 
     <main>
-        <section class="second">
-            <div class="container d-flex justify-content-center align-items-center"></div>
+        <section id="sliderDown" class="second">
+            <div class="container text-center">
+                <h3 id="toggle" class="px-3">Singer one</h3>
+                <p class="p-3 inner m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam expedita nihil excepturi nulla suscipit aliquid hic? Porro, id quod? Fuga commodi quaerat iste deleniti minus vel quidem placeat eaque minima, ratione dolore similique odio aspernatur hic sed? Reprehenderit veritatis earum harum quibusdam blanditiis, recusandae quo hic facere, totam aliquid fugit aspernatur porro repellendus quam molestias molestiae facilis culpa ex praesentium.</p>
+            
+                <h3 id="toggle" class="px-3">Singer two</h3>
+                <p class="p-3 inner m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam expedita nihil excepturi nulla suscipit aliquid hic? Porro, id quod? Fuga commodi quaerat iste deleniti minus vel quidem placeat eaque minima, ratione dolore similique odio aspernatur hic sed? Reprehenderit veritatis earum harum quibusdam blanditiis, recusandae quo hic facere, totam aliquid fugit aspernatur porro repellendus quam molestias molestiae facilis culpa ex praesentium.</p>
+            
+                <h3 id="toggle" class="px-3">Singer three</h3>
+                <p class="p-3 inner m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam expedita nihil excepturi nulla suscipit aliquid hic? Porro, id quod? Fuga commodi quaerat iste deleniti minus vel quidem placeat eaque minima, ratione dolore similique odio aspernatur hic sed? Reprehenderit veritatis earum harum quibusdam blanditiis, recusandae quo hic facere, totam aliquid fugit aspernatur porro repellendus quam molestias molestiae facilis culpa ex praesentium.</p>
+            
+                <h3 id="toggle" class="px-3">Singer four</h3>
+                <p class="p-3 inner m-0">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nemo molestiae eaque nulla repudiandae consectetur? Voluptatem consequatur quidem alias sapiente? Soluta culpa tempora quo et! Veniam provident quibusdam distinctio, quae sint id officiis nulla, corrupti non accusantium voluptates impedit culpa reiciendis eius, repudiandae vel vitae repellat libero sunt voluptatem dolore odio quaerat consectetur. Pariatur, aliquam eum. Voluptatum vitae omnis minus aliquam nemo eveniet quae ut, possimus aspernatur libero dolore quas rem explicabo velit optio quo dolorum quibusdam corrupti repellat, similique amet!</p>
+            </div>
+        </section>
+
+        <section id="count" class="third position-relative h-100">
+            <div class="count-layer">
+                <div class="container text-center">
+                    <div class="row">
+    
+                    <div class="col-md-3">
+                        <div class="tim">
+                            <span class=" days">-1000 D</span>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="tim">
+                            <span class=" hours">9 h</span>
+                        </div>
+                    </div>
+    
+                    <div class="col-md-3">
+                        <div class="tim">
+                            <span class=" minutes">47 m</span>
+                            </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="tim">
+                            <span class="seconds">9 s</span>
+                            </div>
+                    </div>
+                
+                </div>
+                </div>    
+            </div>
         </section>
     </main>
    

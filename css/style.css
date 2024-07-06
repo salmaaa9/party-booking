@@ -6,6 +6,7 @@ body{
     line-height: 1.5;
     color: #212529;
 }
+
 /* header */
 header{
     background-image: url(../imgs/events-heavenly-header.jpg);
@@ -27,11 +28,13 @@ header i{
     font-size: 30px;
     font-weight: 400;
 }
+
 /* side Nav */
 .sideNav{
     background-color: #212529;
     padding-top: 60px;
     left: 0;
+    transition: 1s all;
 }
 .sideNav .options{
     right: -130px;
@@ -49,11 +52,43 @@ header i{
     padding-top: 30px;
     padding-right: 50px;
 }
-/* section two */
-#sliderDown h3 {
-    padding: 10px;
-    margin: 0;
-    background-color: rgba(214, 46, 51, 0.6);
+.options,i{
     cursor: pointer;
+}
+
+/* section two */
+#sliderDown {
+    margin: 100px auto;
+    width: 50%;
+}
+#sliderDown h3 {
+padding: 10px;
+margin: 0;
+background-color: rgba(214, 46, 51, 0.6);
+cursor: pointer;
+color: white;
+}
+#sliderDown p {
+padding: 10px;
+background-color: #ccc;
+display: none;
+}
+
+/* countDown */
+.count{
+    background-image: url(../imgs/count.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100% 100%;
+    position: relative;
+    height: 330px;
+}
+.count-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(214, 46, 51, 0.6);
     color: white;
 }
