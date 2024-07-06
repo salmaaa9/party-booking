@@ -6,9 +6,14 @@ body{
     line-height: 1.5;
     color: #212529;
 }
+@media (min-width: 1200px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 1140px;
+    }
+}
 
 /* header */
-header{
+header#home{
     background-image: url(../imgs/events-heavenly-header.jpg);
     background-position: center;
     background-size: cover;
@@ -46,6 +51,10 @@ header i{
     line-height: 38px;
     padding: 20px 8px 20px 32px;
     color: white;
+    transition: 0.3s all;
+}
+.navList a:hover,i:hover{
+    color:brown;
 }
 .navList li{
     list-style: none;
@@ -54,6 +63,7 @@ header i{
 }
 .options,i{
     cursor: pointer;
+    transition: 0.3s all;
 }
 
 /* section two */
@@ -73,9 +83,12 @@ padding: 10px;
 background-color: #ccc;
 display: none;
 }
+#sliderDown p.first{
+    display: block;
+}
 
 /* countDown */
-.count{
+#Duration{
     background-image: url(../imgs/count.jpg);
     background-repeat: no-repeat;
     background-position: center center;
@@ -83,7 +96,7 @@ display: none;
     position: relative;
     height: 330px;
 }
-.count-layer {
+.Duration-layer {
     position: absolute;
     top: 0;
     left: 0;
@@ -91,4 +104,59 @@ display: none;
     height: 100%;
     background-color: rgba(214, 46, 51, 0.6);
     color: white;
+}
+.Duration-layer .container{
+    margin: auto;
+    padding-block: 100px;
+}
+.Duration-layer .square {
+    padding: 50px;
+    border: 1px solid #FFF;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+/* contact */
+#contact-us{
+    margin-block: 100px;
+}
+#contact-us .container{
+padding-top: 100px;
+}
+#contact-us h3,h2{
+    color: #444;
+    font-size: 18px;
+    font-weight: bold;
+}
+#contact-us h2{
+    font-size: 30px;
+}
+#contact-us p {
+    font-size: 16px;
+    line-height: 26px;
+    color: #777;
+}
+#contact-us .contacts,.social-list{
+    margin-top: 50px;
+}
+#contact-us .social-list i{
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    color: #777;
+    border: 1px #999 solid;
+    transition: 0.5s all;
+}
+#contact-us .social-list i:hover{
+    background-color:brown;
+    border:brown;
+    color: white;
+}
+#contact-us form textarea {
+    height: 200px;
+    resize: vertical;
+}
+.error{
+    border-color: red !important;
+    box-shadow: 0 0 0 .25rem red !important;
 }

@@ -14,20 +14,20 @@
 </head>
 <body>
 
-    <header class="d-flex justify-content-center align-items-center">
+    <header id="home" class="d-flex justify-content-center align-items-center">
         <div class="layer"></div>
         <div class="header-title text-center text-white position-relative">
             <h1>ُEgyption Party</h1>
             <p>let's have some fun</p>
         </div>
-        <div class="sideNav text-white position-fixed top-0 bottom-0">
+        <div class="sideNav z-3 text-white position-fixed top-0 bottom-0">
             <div class="menu d-none">
                 <i class="close fas fa-x position-absolute end-0 pe-4 mb-5"></i>
             <ul class="navList d-flex flex-column align-items-center ps-3 pe-5 mt-4">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#Duration">Duration</a></li>
-                <li><a href="#Details">Details</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#sliderDown">Details</a></li>
+                <li><a href="#contact-us">Contact</a></li>
             </ul>
             </div>
             <div class="options position-absolute p-2 d-flex align-items-center">
@@ -42,7 +42,7 @@
         <section id="sliderDown" class="second">
             <div class="container text-center">
                 <h3 id="toggle" class="px-3">Singer one</h3>
-                <p class="p-3 inner m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam expedita nihil excepturi nulla suscipit aliquid hic? Porro, id quod? Fuga commodi quaerat iste deleniti minus vel quidem placeat eaque minima, ratione dolore similique odio aspernatur hic sed? Reprehenderit veritatis earum harum quibusdam blanditiis, recusandae quo hic facere, totam aliquid fugit aspernatur porro repellendus quam molestias molestiae facilis culpa ex praesentium.</p>
+                <p class="p-3 inner first m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam expedita nihil excepturi nulla suscipit aliquid hic? Porro, id quod? Fuga commodi quaerat iste deleniti minus vel quidem placeat eaque minima, ratione dolore similique odio aspernatur hic sed? Reprehenderit veritatis earum harum quibusdam blanditiis, recusandae quo hic facere, totam aliquid fugit aspernatur porro repellendus quam molestias molestiae facilis culpa ex praesentium.</p>
             
                 <h3 id="toggle" class="px-3">Singer two</h3>
                 <p class="p-3 inner m-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam expedita nihil excepturi nulla suscipit aliquid hic? Porro, id quod? Fuga commodi quaerat iste deleniti minus vel quidem placeat eaque minima, ratione dolore similique odio aspernatur hic sed? Reprehenderit veritatis earum harum quibusdam blanditiis, recusandae quo hic facere, totam aliquid fugit aspernatur porro repellendus quam molestias molestiae facilis culpa ex praesentium.</p>
@@ -55,39 +55,82 @@
             </div>
         </section>
 
-        <section id="count" class="third position-relative h-100">
-            <div class="count-layer">
+        <section id="Duration" class="third position-relative">
+            <div class="Duration-layer">
                 <div class="container text-center">
                     <div class="row">
     
                     <div class="col-md-3">
-                        <div class="tim">
-                            <span class=" days">-1000 D</span>
+                        <div class="square">
+                            <span class="days">-1000 D</span>
                         </div>
                     </div>
                     
                     <div class="col-md-3">
-                        <div class="tim">
+                        <div class="square">
                             <span class=" hours">9 h</span>
                         </div>
                     </div>
     
                     <div class="col-md-3">
-                        <div class="tim">
-                            <span class=" minutes">47 m</span>
+                        <div class="square">
+                            <span class="minutes">47 m</span>
                             </div>
                     </div>
                     
                     <div class="col-md-3">
-                        <div class="tim">
+                        <div class="square">
                             <span class="seconds">9 s</span>
                             </div>
                     </div>
                 
-                </div>
+                    </div>
                 </div>    
             </div>
         </section>
+
+        <section id="contact-us">
+            <div class="container">
+                <header>
+                    <h2>join us</h2>
+                    <p class="text-center p-4">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </header>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3>contact Info</h3>
+                        <p>Why you should hire me writeup Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque nascetur ridiculus mus.</p>
+                        <div class="contacts">
+                            <p class="text-center"><i class="fa fa-map-marker"></i> New Street 22545, Nexa Road, New York City, USA</p>
+                            
+                            <p class="text-center text-danger"><i class="fa fa-envelope"></i> hello@uigrid.com</p>
+                            <p class="text-center"><i class="fa fa-phone"></i> 001-000-000-000</p>
+                        </div>
+                        <div class="social-list d-flex">
+                        
+                            <i class="fab fa-twitter fa-fw d-flex justify-content-center align-items-center"></i>
+                            <i class="fab fa-facebook-f fa-fw d-flex justify-content-center align-items-center"></i>
+                            <i class="fab fa-instagram fa-fw d-flex justify-content-center align-items-center"></i>
+                            <i class="fab fa-dribbble fa-fw d-flex justify-content-center align-items-center"></i>
+                            <i class="fab fa-pinterest fa-fw d-flex justify-content-center align-items-center"></i>
+                        
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="d-flex flex-column g-5">
+                            <form action="submit">
+                                <input required class="form-control mb-4 rounded-0" type="text" name="name" placeholder="Enter Name">
+                                <input required class="form-control mb-4 rounded-0" type="text" name="email" placeholder="Enter Email">
+                                <textarea required class="form-control mb-4 rounded-0 input-lg" name="contactMessage" id="contactMessage" placeholder="Enter Message"></textarea>
+                                <p><span class="text-danger" id="charCount">100</span> char remaining</p>
+                                <div class="btn btn-danger rounded-0 p-2">SEND MESSAGE</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
     </main>
    
 
