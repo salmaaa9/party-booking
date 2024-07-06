@@ -43,7 +43,7 @@ header i{
 }
 .sideNav .options{
     right: -130px;
-    top: 50%;
+    top: 60%;
 }
 .navList a{
     text-decoration: none;
@@ -51,7 +51,7 @@ header i{
     line-height: 38px;
     padding: 20px 8px 20px 32px;
     color: white;
-    transition: 0.3s all;
+    transition: 0.3s color;
 }
 .navList a:hover,i:hover{
     color:brown;

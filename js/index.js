@@ -2,11 +2,22 @@
 $('.close').on('click',function(){
     $('.sideNav').css({left : -$('.sideNav').width()})
 })
+// leh first time open too fast
 $('.options').on('click',function(){
-    $('.menu').removeClass('d-none')
     $('.sideNav').css({left : 0})
+    $('.menu').removeClass('d-none')
 })
 
+// menu sliding
+$('.menu ul a').on('click',function(){
+    var href = $(this).attr("href");
+    var offset = $(`${href}`).offset().top;
+    console.log(offset,href);
+    $('html, body').animate({scrollTop:offset},2000,'ease');
+    $('.menu').addClass('d-none')
+})
+
+  
 // sliderDown
 $('#sliderDown h3').click(function() {
 
